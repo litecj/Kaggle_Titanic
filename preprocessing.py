@@ -4,7 +4,7 @@ train = pd.read_csv(r'./data/train.csv')
 test = pd.read_csv(r'./data/test.csv')
 
 def feature_engineering(df):
-    # Sex 성별을 : female -> 0, maie ->1로 변환
+    # SEX : female -> 0, maie ->1 Change
     df['Sex'] = df['Sex'].map({'female': 0, 'male': 1})
 
     # Embarked
