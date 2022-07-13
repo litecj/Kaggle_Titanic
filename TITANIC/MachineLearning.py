@@ -44,6 +44,7 @@ def random_forest_1():
     # 결과
     #총 357명 중 83.473% 정확도로 생존을 맞춤
 
+
 def random_forest_2():
     RF_classifier = RandomForestClassifier()
 
@@ -101,6 +102,7 @@ def random_forest_2():
                            min_weight_fraction_leaf=0.0, n_estimators=1200,
                            n_jobs=None, oob_score=False, random_state=None,
                            verbose=0, warm_start=False)
+
 
 def check():
     feature_importance = random_forest_2.rf.feature_importances_
